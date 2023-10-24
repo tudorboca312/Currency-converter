@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Curency Converter</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Currency Converter</h1>
+        <div class="currency">
+            <select name="currency--from" id="currency--from--select">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY</option>
+                <option value="GBP">GBP</option>
+                <option value="RON">RON</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CNY">CNY</option>
+                <option value="HKD">HKD</option>
+                <option value="NZD">NZD</option>
+                <option value="SEK">SEK</option>
+                <option value="NOK">NOK</option>
+                <option value="DKK">DKK</option>
+                <option value="SGD">SGD</option>
+                <option value="MXN">MXN</option>
+                <option value="INR">INR</option>
+                <option value="RUB">RUB</option>
+                <option value="ZAR">ZAR</option>
+                <option value="BRL">BRL</option>
+                <option value="TRY">TRY</option>
+                <option value="KRW">KRW</option>
+                <option value="PLN">PLN</option>
+                <option value="THB">THB</option>
+                <option value="IDR">IDR</option>
+                <option value="MYR">MYR</option>
+            </select>
+            <select name="currency--to" id="currency--to--select">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY</option>
+                <option value="GBP">GBP</option>
+                <option value="RON">RON</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CNY">CNY</option>
+                <option value="HKD">HKD</option>
+                <option value="NZD">NZD</option>
+                <option value="SEK">SEK</option>
+                <option value="NOK">NOK</option>
+                <option value="DKK">DKK</option>
+                <option value="SGD">SGD</option>
+                <option value="MXN">MXN</option>
+                <option value="INR">INR</option>
+                <option value="RUB">RUB</option>
+                <option value="ZAR">ZAR</option>
+                <option value="BRL">BRL</option>
+                <option value="TRY">TRY</option>
+                <option value="KRW">KRW</option>
+                <option value="PLN">PLN</option>
+                <option value="THB">THB</option>
+                <option value="IDR">IDR</option>
+                <option value="MYR">MYR</option>
+            </select>
+        </div>
+        <div class="money">
+            <div class="money--from">
+                <input class="money--left" type="text" name="amount--from" value="0">
+                <span class="currency--symbol--from">USD</span>
+            </div>
+            <img src="conversion.png" alt="Flaticon icon" style="width: 40px; height: 40px; ">
+            <div class="money--to">
+                <input class="money--right" type="text" name="amount--to" readonly value="0">
+                <span class="currency--symbol--to">USD</span>
+            </div>            
+        </div>
+        <!-- <button class="btn--convert">Convert</button> -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
